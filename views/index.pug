@@ -1,0 +1,450 @@
+extends layout
+
+block content
+    // === Меню Клон ======
+    nav#menu.slideout-menu
+      .close
+        i.fa.fa-times(aria-hidden='true')
+      .logoo
+        a(href='#')
+          img(src='/images/transparent-avatars-web-developer.png', alt='')
+      ul.menu-b
+        li
+          a.item(href='#panel') Главная
+        li
+          a.item(href='#section-1') Мои Навыки
+        li
+          a.item(href='#section-2') Портфолио
+        li
+          a.item(href='#section-4') Обо мне
+        li
+          a.item(href='#section-5') Контакт
+    // HEADER
+    header#panel.header.panel.slideout-panel.slideout-panel-left
+      .container
+        .menu-top
+          .logo
+            a(href='#')
+              img(src='/images/transparent-avatars-web-developer.png', alt='')
+          ul.menu-super
+            li(style='list-style: none;')
+              a.item.active(href='#panel') Главная
+            li(style='list-style: none;')
+              a.item(href='#section-1') Мои Навыки
+            li(style='list-style: none;')
+              a.item(href='#section-2') Портфолио
+            li(style='list-style: none;')
+              a.item(href='#section-4') Обо мне
+            li(style='list-style: none;')
+              a.item(href='#section-5') Контакт
+          .gamb
+            p Меню
+            i.fa.fa-bars(aria-hidden='true')
+      .text
+        h1 Привет меня завут Азиз и я
+        h2 FRONT END WEB DEVELOPER
+        h4 Создаю современные и гибкие Веб страницы
+      .strelka
+        a(href='#section-1')
+          i.fa.fa-chevron-down
+    // SECTION - 1 мои навыки
+    section#section-1.section-1
+      // PARTICLE JS
+      #particles-js.body_particle
+      .container.section_1_zindex
+        .text-1
+          h3 Мои Навыки
+          i.fa.fa-2x.fa-spin.fa-cog
+        .owl_slider.owl-carousel
+          .member
+            .juli
+              .box
+                img(src='/images/Skills/html.png', alt='')
+              .jek
+                h3 HTML
+                .progress
+                  .progress-bar.p1
+                    span.san 90%
+          .member
+            .juli
+              .box
+                img(src='/images/Skills/css.png', alt='')
+              .jek
+                h3 CSS
+                .progress
+                  .progress-bar.p2
+                    span.san 80%
+          .member
+            .juli
+              .box
+                img(src='/images/Skills/js.png', alt='')
+              .jek
+                h3 Java Script
+                .progress
+                  .progress-bar.p3
+                    span.san 60%
+          .member
+            .juli
+              .box
+                img(src='/images/Skills/php.png', alt='')
+              .jek
+                h3 PHP
+                .progress
+                  .progress-bar.p4
+                    span.san 60%
+          .member
+            .juli
+              .box
+                img(src='/images/Skills/Wp.png', alt='')
+              .jek
+                h3 Word Press
+                .progress
+                  .progress-bar.p5
+                    span.san 50%
+          .member
+            .juli
+              .box
+                img(src='/images/Skills/jquery-icon.png', alt='')
+              .jek
+                h3 Jquery
+                .progress
+                  .progress-bar.p6
+                    span.san 60%
+          .member
+            .juli
+              .box
+                img(src='/images/Skills/gulp.png', alt='')
+              .jek
+                h3 Gulp
+                .progress
+                  .progress-bar.p7
+                    span.san 70%
+          .member
+            .juli
+              .box
+                img(src='/images/Skills/App-logo-opencart.png', alt='')
+              .jek
+                h3 OpenCart
+                .progress
+                  .progress-bar.p8
+                    span.san 50%
+        .owl_sliders_button.d-flex.justify-content-center
+          button.btn.btn-primary.mr-3.owl_start Start
+          button.btn.btn-danger.owl_stop Stop
+    // SECTION - 3 что получите
+    section#section-3.section-3
+      #scene.lov
+        img(data-depth='0.7', src='./images/para/rocket-up.png', alt='')
+      .container
+        .text-3
+          h3 Что вы получите
+          i.fab.fa-grav.fa-spin
+        .row
+          .col-lg-3.col-md-3.col-sm-6.col-12
+            .time
+              i.fas.fa-tablet-alt
+              h4 Адаптив
+              p Полностью функциональны на любых устройствах.
+          .col-lg-3.col-md-3.col-sm-6.col-12
+            .time
+              i.fas.fa-tachometer-alt-fastest
+              h4 Кросс-браузерный
+              p
+                | Работают не только на последних версиях браузеров, благодаря
+                | методу разработки и используемым тул-китам.
+          .col-lg-3.col-md-3.col-sm-6.col-12
+            .time
+              i.fab.fa-monero
+              h4 СОВРЕМЕННЫЙ
+              p Верстка соответствует новым трендам.
+          .col-lg-3.col-md-3.col-sm-6.col-12
+            .time
+              i.fas.fa-business-time
+              h4 всегда в срок
+              p
+                | Соблюдение сроков - один из важнейших факторов в моей работе
+    // SECTION - 2 портфолио
+    section#section-2.section-2
+      .container
+        .text-2
+          h3 Портфолио
+          i.fa.fa-2x.fa-briefcase
+        .row.puma
+          .col-lg-6.col-md-6.col-sm-12.col-12.tab-box.active
+            .text-p
+              p Работа-1
+          .col-lg-6.col-md-6.col-sm-12.col-12.tab-box
+            .text-p
+              p Работа-2
+        // ==========
+        .row.lio
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple7.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | Switch
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p сайт для офисов
+                .btn
+                  a(href='Projec/Switch/index.html') смотреть
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple2.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | CarlePoint
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p сайт для стоматология
+                .btn
+                  a(href='Projec/Stamatologiya/app/index.html') смотреть
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | StyleTour
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p сайт для магазинов
+                .btn
+                  a(href='Projec/Style-Tour/index.html') смотреть
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple4.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | Mogo
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p сайт портфолио
+                .btn
+                  a(href='Projec/Mogo/index.html') смотреть
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple11.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | velo
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p сайт для велосипедов
+                .btn
+                  a(href='Projec/Yebo/index.html') смотреть
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple6.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | Gipsolit
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p сайт для строительства
+                .btn
+                  a(href='Projec/Gipsolit/index.html') смотреть
+        .row.lio
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple3.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | saraevo
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p сайт для портфолио
+                .btn
+                  a(href='Projec/Saraev/index.html') смотреть
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple8.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | Bag
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p креативный сайт для портфолио
+                .btn
+                  a(href='Projec/Bek-1/index.html') смотреть
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple9.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | RockStar
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p креативный сайт
+                .btn
+                  a(href='Projec/Bek-2/index.html') смотреть
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/apple5.png', alt='')
+              .tex-box
+                h3
+                  i.fa.fa-star.fa-spin
+                  | waxom
+                  i.fa.fa-star.fa-spin
+                h4
+                  i.fa.fa-tachometer
+                  |  Кроусброузерный
+                h5
+                  i.fa.fa-mobile
+                  |  Адаптивный
+                p сайт для портфолио
+                .btn
+                  a(href='Projec/Waxom/index.html') смотреть
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/new.png', alt='')
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .box
+              img(src='/images/Portfolio/new.png', alt='')
+    // SECTION - 4 обо мне
+    section#section-4.section-4
+      .container
+        .text-4
+          h3 Обо мне
+          i.fa.fa-address-card
+        .mne
+          p
+            | Привет меня Завут Азиз мне 25 года и я Веб-Разработчик делаю сайты
+            | любых сложности от landing page до интернет магазинов! Всегда готов
+            | развивать свои профессиональные навыки в компании специализирущейся
+            | в моей сфере. Вооружен энтузиазмом для 110%-ной отдачи любимому
+            | делу! Изучился в лучшей курсах своего города в профессиональном
+            | школе
+            span.pro
+              a(href='https://proweb.uz/') ProWeb!
+    // SECTION 5  Контакт
+    section#section-5.section-5
+      .container
+        .text-5
+          h3 Контакт
+          i.far.fa-mobile
+        .row
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .social
+              i.fab.fa-github
+              .tex-social
+                a(href='https://azizbek1.github.io/') azizbek1.github.io
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .social
+              i.fab.fa-odnoklassniki-square
+              .tex-social
+                a(href='https://ok.ru/') Азиз Комилов
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .social
+              i.fab.fa-facebook-square
+              .tex-social
+                a(href='https://www.facebook.com/') Азиз Комилов
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .social
+              i.fab.fa-telegram
+              .tex-social
+                a(href='https://telegram.me/') @fructik
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .social
+              i.fas.fa-phone
+              .tex-social
+                a(href='https://www.whatsapp.com/?lang=ru') +998 90 315-21-55
+          .col-lg-4.col-md-4.col-sm-6.col-12
+            .social
+              i.fab.fa-instagram
+              .tex-social
+                a(href='https://www.instagram.com/') @azizz_888
+        .phone
+          .pre-abshek
+            ul.crist
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+              li
+          .nume
+            i.fa.fa-volume-control-phone
+            p +998 90 315-21-55
+          .pro
+            p
+              i.fa.fa-spin.fa-star-half-o
+              | PRO-CODE
+              i.fa.fa-spin.fa-star-half-o
+              br
+              | 2020
+    
+
